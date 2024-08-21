@@ -1,7 +1,7 @@
 // components/Hero.js
 import React from "react";
 import WavyDivider from "../assets/something/wavy-steps.svg";
-import HalfMoonDivider from "../assets/something/half-moon.svg";
+// import HalfMoonDivider from "../assets/something/half-moon.svg";
 
 
 const Hero = () => {
