@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap');
+
+
+
+body {
+  @apply font-sans; /* This applies the font globally */
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Keep contents within an width of 5xl */
+.container-max-w-5xl {
+  @apply container mx-auto px-4 max-w-5xl;
+}
+
+@keyframes scaleUp {
+  0% {
+      transform: scale(0.1);
+      opacity: 0;
+  }
+  100% {
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+      transform: translateX(0);
+  }
+  25% {
+      transform: translateX(-5px);
+  }
+  50% {
+      transform: translateX(4px);
+  }
+  75% {
+      transform: translateX(-3px);
+  }
+}
+
+.animate-scale-up {
+  animation: scaleUp 0.4s ease-in-out forwards, shake 0.6s ease-in-out 0.3s forwards;
+}
