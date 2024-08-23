@@ -7,7 +7,7 @@ const About = () => {
     <>
       <section
         id="about"
-        className="py-40 bg-gray-100 relative z-[-100] mt-[-120px]"
+        className="py-40 bg-cream relative z-[-100] mt-[-120px]"
       >
         <div className="container-max-w-5xl">
           <div className="flex flex-col md:flex-row items-center">
@@ -21,15 +21,15 @@ const About = () => {
             </div>
             {/* About Me Text */}
             <div className="md:w-2/3 md:pl-8">
-              <h2 className="text-3xl font-bold text-purple-600 mb-4">
+              <h2 className="text-3xl font-bold text-mint mb-4">
                 About Me
               </h2>
-              <p className="text-lg text-gray-700 mb-4">
+              <p className="text-lg text-choco mb-4">
                 Hello! I’m [Your Name], a passionate [Your Profession] based in
                 [Your Location]. I love creating beautiful and functional
                 designs that make a difference.
               </p>
-              <p className="text-lg text-gray-700">
+              <p className="text-lg text-choco">
                 With a background in [Your Background or Experience], I
                 specialize in [Your Specialization or Skills]. When I’m not
                 working, you can find me [Your Hobbies or Interests]. Feel free

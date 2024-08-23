@@ -9,7 +9,7 @@ module.exports = {
         sans: ['Kanit', 'sans-serif'],
       },
       boxShadow: {
-        'solid': '4px 4px 0px rgba(0, 0, 0, 1)',
+        'solid': '4px 4px 0px rgba(56, 50, 42, 1)',
       },
       colors: {
         choco: '#38322a',

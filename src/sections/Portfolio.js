@@ -22,14 +22,14 @@ const portfolioItems = [
 
 const Portfolio = () => {
   return (
-    <section id="portfolio" className="py-40 bg-indigo-100 relative z-[-100] mt-[-120px]">
+    <section id="portfolio" className="py-40 bg-vitamin relative z-[-100] mt-[-120px]">
       <div className="container-max-w-5xl">
-        <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">Portfolio</h2>
+        <h2 className="text-4xl font-bold text-center mb-12 text-choco">Portfolio</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {portfolioItems.map((item, index) => (
             <div
               key={index}
-              className="relative bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-105"
+              className="relative bg-cream shadow-solid border border-choco rounded-2xl overflow-hidden transform transition-transform duration-300 hover:scale-105"
             >
               <img
                 src={item.image}
