@@ -2,13 +2,13 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <section className="py-16 bg-white" id="contact">
-      <div className="container mx-auto px-4">
+    <section className="py-16 bg-mint" id="contact">
+      <div className="container-max-w-5xl">
         <h2 className="text-3xl font-bold text-center mb-12">Contact Us</h2>
         <div className="flex flex-wrap -mx-4">
           {/* Contact Form */}
           <div className="w-full md:w-2/3 px-4 mb-8">
-            <form className="bg-gray-100 p-8 rounded-lg shadow-lg">
+            <form className="bg-cream p-8 rounded-xl border border-choco shadow-solid">
               <div className="mb-4">
                 <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
                   Name
@@ -58,7 +58,7 @@ const Contact = () => {
               <div className="text-center">
                 <button
                   type="submit"
-                  className="bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors duration-300"
+                  className="bg-mint border border-mint text-cream px-6 py-3 rounded-lg font-semibold hover:bg-cream hover:text-mint transition-colors duration-300"
                 >
                   Send Message
                 </button>
@@ -68,7 +68,7 @@ const Contact = () => {
 
           {/* Contact Information */}
           <div className="w-full md:w-1/3 px-4 mb-8">
-            <div className="bg-gray-100 p-8 rounded-lg shadow-lg h-full flex flex-col justify-center">
+            <div className="bg-cream p-8 rounded-xl border border-choco shadow-solid h-full flex flex-col justify-center">
               <h3 className="text-xl font-semibold mb-4">Get In Touch</h3>
               <p className="text-gray-600 mb-4">
                 Feel free to reach out to me via email or phone. I look forward to hearing from you!

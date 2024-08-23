@@ -14,7 +14,7 @@ const Hero = () => {
           </p>
           <a
             href="#contact"
-            className="bg-vitamin text-cream px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300"
+            className="bg-vitamin text-cream border border-vitamin px-6 py-3 rounded-lg font-semibold hover:bg-cream hover:text-vitamin transition duration-300"
           >
             Contact Me
           </a>
