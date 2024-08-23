@@ -70,25 +70,25 @@ const Navbar = () => {
     <nav className="flex flex-col items-center pt-16 pb-5">
         <a
             href="#about"
-            className={`block px-4 py-2 hover:bg-purple-400 w-full text-center transform transition duration-300 hover:text-white ${isOpen ? 'animate-scale-up' : ''}`}
+            className={`block px-4 py-2 hover:bg-purple-400 w-full text-center transform transition duration-300 hover:text-white ${isOpen ? 'animate-scale-up-and-shake' : ''}`}
         >
             About
         </a>
         <a
             href="#portfolio"
-            className={`block px-4 py-2 hover:bg-purple-400 w-full text-center transform transition duration-300 hover:text-white ${isOpen ? 'animate-scale-up' : ''}`}
+            className={`block px-4 py-2 hover:bg-purple-400 w-full text-center transform transition duration-300 hover:text-white ${isOpen ? 'animate-scale-up-and-shake' : ''}`}
         >
             Portfolio
         </a>
         <a
             href="#services"
-            className={`block px-4 py-2 hover:bg-purple-400 w-full text-center transform transition duration-300 hover:text-white ${isOpen ? 'animate-scale-up' : ''}`}
+            className={`block px-4 py-2 hover:bg-purple-400 w-full text-center transform transition duration-300 hover:text-white ${isOpen ? 'animate-scale-up-and-shake' : ''}`}
         >
             Services
         </a>
         <a
             href="#contact"
-            className={`block px-4 py-2 hover:bg-purple-400 w-full text-center transform transition duration-300 hover:text-white ${isOpen ? 'animate-scale-up' : ''}`}
+            className={`block px-4 py-2 hover:bg-purple-400 w-full text-center transform transition duration-300 hover:text-white ${isOpen ? 'animate-scale-up-and-shake' : ''}`}
         >
             Contact
         </a>
