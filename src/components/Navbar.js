@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 // import { bubble as Menu } from 'react-burger-menu';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import '../index.css';
@@ -9,6 +9,27 @@ const Navbar = () => {
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
+
+    const closeMenu = () => {
+        setIsOpen(false);
+    };
+
+     // Close the dropdown menu when scrolling
+     useEffect(() => {
+        const handleScroll = () => {
+            if (isOpen) {
+                closeMenu();
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        // Clean up the event listener on component unmount
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, [isOpen]);
+
 
     return (
         <header className="bg-purple-600 text-white sticky top-0 z-50">
@@ -32,35 +53,6 @@ const Navbar = () => {
                 </nav>
             </div>
 
-            {/* Dropdown Menu (Mobile) */}
-            {/* {isOpen && (                
-                <nav className="absolute top-full left-0 w-full bg-purple-700 py-2" >
-                  <a href="#about" className="block px-4 py-2 hover:bg-purple-500 text-center">About</a>
-                  <a href="#portfolio" className="block px-4 py-2 hover:bg-purple-500 text-center">Portfolio</a>
-                  <a href="#services" className="block px-4 py-2 hover:bg-purple-500 text-center">Services</a>
-                  <a href="#contact" className="block px-4 py-2 hover:bg-purple-500 text-center">Contact</a>
-                </nav>
-            )} */}
-
-            {/* <div
-                 className={`absolute top-0 left-0 w-full z-[-10] bg-purple-500 transition-transform duration-300 ease-in-out transform ${isOpen ? 'translate-y-0' : '-translate-y-full'
-                    }`}
-            >
-                <nav className="flex flex-col items-center pt-16 pb-5">
-                    <a href="#about" className="block px-4 py-2 hover:bg-purple-500 w-full text-center">
-                        About
-                    </a>
-                    <a href="#portfolio" className="block px-4 py-2 hover:bg-purple-500 w-full text-center">
-                        Portfolio
-                    </a>
-                    <a href="#services" className="block px-4 py-2 hover:bg-purple-500 w-full text-center">
-                        Services
-                    </a>
-                    <a href="#contact" className="block px-4 py-2 hover:bg-purple-500 w-full text-center">
-                        Contact
-                    </a>
-                </nav>
-            </div> */}
 
 <div
     className={`absolute top-0 left-0 w-full z-[-10] bg-purple-500 transition-transform duration-300 ease-in-out transform ${
@@ -94,15 +86,6 @@ const Navbar = () => {
         </a>
     </nav>
 </div>
-
-
-
-
-
-
-
-
-
 
         </header>
     );
