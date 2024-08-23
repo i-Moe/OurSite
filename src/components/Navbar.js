@@ -32,8 +32,8 @@ const Navbar = () => {
 
 
     return (
-        <header className="bg-purple-600 text-white sticky top-0 z-50">
-            <div className="container-max-w-5xl mx-auto px-4 flex justify-between items-center h-16 relative">
+        <header className="bg-cream text-choco border-b border-choco sticky top-0 z-50">
+            <div className="container-max-w-5xl bg-cream flex justify-between items-center h-16 relative">
                 {/* Logo */}
                 <div className="text-2xl font-bold">My Logo</div>
 
@@ -46,41 +46,41 @@ const Navbar = () => {
 
                 {/* Menu (Desktop) */}
                 <nav className="hidden sm:flex space-x-6">
-                    <a href="#about" className="hover:text-gray-300">About</a>
-                    <a href="#portfolio" className="hover:text-gray-300">Portfolio</a>
-                    <a href="#services" className="hover:text-gray-300">Services</a>
-                    <a href="#contact" className="hover:text-gray-300">Contact</a>
+                    <a href="#about" className="hover:text-mint">About</a>
+                    <a href="#portfolio" className="hover:text-vitamin">Portfolio</a>
+                    <a href="#services" className="hover:text-mint">Services</a>
+                    <a href="#contact" className="hover:text-vitamin">Contact</a>
                 </nav>
             </div>
 
-
+ {/* Dropdown Menu (Mobile) */}
 <div
-    className={`absolute top-0 left-0 w-full z-[-10] bg-purple-500 transition-transform duration-300 ease-in-out transform ${
+    className={`absolute top-0 left-0 w-full z-[-10] bg-lemon border-b border-choco transition-transform duration-300 ease-in-out transform ${
         isOpen ? 'translate-y-0' : '-translate-y-full'
     }`}
 >
-    <nav className="flex flex-col items-center pt-16 pb-5">
+    <nav className="flex flex-col items-center pt-20 pb-5">
         <a
             href="#about"
-            className={`block px-4 py-2 hover:bg-purple-400 w-full text-center transform transition duration-300 hover:text-white ${isOpen ? 'animate-scale-up-and-shake' : ''}`}
+            className={`block px-4 py-2 hover:bg-mint w-full text-center transform transition duration-300 hover:text-cream ${isOpen ? 'animate-scale-up-and-shake' : ''}`}
         >
             About
         </a>
         <a
             href="#portfolio"
-            className={`block px-4 py-2 hover:bg-purple-400 w-full text-center transform transition duration-300 hover:text-white ${isOpen ? 'animate-scale-up-and-shake' : ''}`}
+            className={`block px-4 py-2 hover:bg-vitamin w-full text-center transform transition duration-300 hover:text-cream ${isOpen ? 'animate-scale-up-and-shake' : ''}`}
         >
             Portfolio
         </a>
         <a
             href="#services"
-            className={`block px-4 py-2 hover:bg-purple-400 w-full text-center transform transition duration-300 hover:text-white ${isOpen ? 'animate-scale-up-and-shake' : ''}`}
+            className={`block px-4 py-2 hover:bg-mint w-full text-center transform transition duration-300 hover:text-cream ${isOpen ? 'animate-scale-up-and-shake' : ''}`}
         >
             Services
         </a>
         <a
             href="#contact"
-            className={`block px-4 py-2 hover:bg-purple-400 w-full text-center transform transition duration-300 hover:text-white ${isOpen ? 'animate-scale-up-and-shake' : ''}`}
+            className={`block px-4 py-2 hover:bg-vitamin w-full text-center transform transition duration-300 hover:text-cream ${isOpen ? 'animate-scale-up-and-shake' : ''}`}
         >
             Contact
         </a>
