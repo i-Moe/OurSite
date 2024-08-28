@@ -1,6 +1,6 @@
 import React from "react";
 import profileImage from "../assets/images/giphy.webp";
-import HalfMoonDivider from "../assets/something/half-moon.svg";
+import WavyDivider from "../assets/something/wavy-steps.svg";
 
 const About = () => {
   return (
@@ -41,13 +41,21 @@ const About = () => {
         </div>
       </section>
 
+
       <img
+        src={WavyDivider}
+        alt="Wavy divider"
+        className="block w-full mt-[-3px]"
+      />
+
+
+      {/* <img
         src={HalfMoonDivider}
         alt="Half Moon divider"
         className="block w-full relative 
           top-[-90px] sm:top-[-75px] lg:top-[-40px]
           h-[40px] sm:h-[60px] lg:h-[100px]"
-      />
+      /> */}
 
 
       {/* <img

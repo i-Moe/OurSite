@@ -1,9 +1,11 @@
 import React from 'react';
-import { FaPaintBrush, FaCode, FaLanguage } from 'react-icons/fa'; // Example icons from react-icons
+import { FaPaintBrush, FaCode, FaLanguage } from 'react-icons/fa';
+import HalfMoonDivider2 from '../assets/something/half-moon2.svg' // Example icons from react-icons
 
 const Services = () => {
   return (
-    <section id="services" className="py-16 bg-lemon">
+    <>
+    <section id="services" className="pt-40 pb-16 bg-lemon relative z-[-110] mt-[-150px]">
       <div className="container-max-w-5xl">
         <h2 className="text-3xl font-bold text-center mb-12">Our Services</h2>
         <div className="flex flex-wrap -mx-4">
@@ -36,6 +38,18 @@ const Services = () => {
         </div>
       </div>
     </section>
+
+    <img
+        src={HalfMoonDivider2}
+        alt="Half Moon divider"
+        className="block w-full 
+        
+        
+        relative mt-[-3px]
+          h-[40px] sm:h-[60px] lg:h-[100px]"
+      />
+
+      </>
   );
 };
 

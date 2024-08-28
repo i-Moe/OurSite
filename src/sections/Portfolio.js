@@ -1,4 +1,5 @@
 import React from 'react';
+import WavyMirroredDivider from '../assets/something/wavy-steps-mirrored.svg'
 
 // Sample portfolio items
 const portfolioItems = [
@@ -22,7 +23,9 @@ const portfolioItems = [
 
 const Portfolio = () => {
   return (
-    <section id="portfolio" className="py-40 bg-vitamin relative z-[-100] mt-[-120px]">
+    <>
+    
+    <section id="portfolio" className="py-40 bg-vitamin relative z-[-100] mt-[-145px]">
       <div className="container-max-w-5xl">
         <h2 className="text-4xl font-bold text-center mb-12 text-choco">Portfolio</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -46,6 +49,13 @@ const Portfolio = () => {
         </div>
       </div>
     </section>
+
+    <img
+        src={WavyMirroredDivider}
+        alt="Wavy Mirrored divider"
+        className="block w-full mt-[-3px]"
+      />
+    </>
   );
 };
 

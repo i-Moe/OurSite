@@ -1,5 +1,5 @@
 import React from "react";
-import WavyDivider from "../assets/something/wavy-steps.svg";
+import HalfMoonDivider from "../assets/something/half-moon.svg";
 
 const Hero = () => {
   return (
@@ -20,12 +20,22 @@ const Hero = () => {
           </a>
         </div>
       </section>
-
+      
       <img
+        src={HalfMoonDivider}
+        alt="Half Moon divider"
+        className="block w-full 
+        
+        
+        relative mt-[-3px]
+          h-[40px] sm:h-[60px] lg:h-[100px]"
+      />
+
+      {/* <img
         src={WavyDivider}
         alt="Wavy divider"
         className="block w-full mt-[-3px]"
-      />
+      /> */}
     </>
   );
 };
