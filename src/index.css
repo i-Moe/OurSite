@@ -47,3 +47,12 @@ code {
 .animate-scale-up-and-shake {
   animation: scaleUpAndShake 0.4s ease-in-out forwards;
 }
+
+
+.text-stroke {
+  -webkit-text-stroke: 1px var(--tw-text-stroke-color);
+}
+
+.text-stroke-choco {
+  --tw-text-stroke-color: theme('colors.choco');
+}

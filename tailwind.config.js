@@ -18,7 +18,13 @@ module.exports = {
         mint: '#028e87',
         cream: '#f3e7d7',
       },
+      textShadow: {
+        'default': '2px 2px 4px rgba(0, 0, 0, 0.25)', // Example shadow
+        'choco': '3px 2px 1px theme("colors.choco")', // Shadow with choco color
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-textshadow')
+  ],
 }
