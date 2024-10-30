@@ -7,20 +7,20 @@ const About = () => {
     <>
       <section
         id="about"
-        className="py-40 bg-cream relative z-[-100] mt-[-120px]"
+        className="pt-40 pb-24 sm:pb-40  bg-cream relative z-[-100] mt-[-120px]"
       >
-        <div className="container-max-w-5xl">
+        <div className="container-max-w-5xl mt-7">
           <div className="flex flex-col md:flex-row items-center">
             {/* Profile Image (Optional) */}
             <div className="md:w-1/3 mb-8 md:mb-0">
               <img
                 src={profileImage}
                 alt="Profile"
-                className="w-full h-auto rounded-full shadow-lg"
+                className="w-4/5 mx-auto h-auto rounded-full shadow-lg"
               />
             </div>
             {/* About Me Text */}
-            <div className="md:w-2/3 md:pl-8">
+            <div className="px-3 md:w-2/3 md:pl-8">
               <h2 className="text-3xl font-bold text-mint mb-4">
                 About Us
               </h2>
