@@ -9,7 +9,8 @@ const Hero = () => {
         <div className="container-max-w-5xl flex flex-col sm:flex-row items-center sm:items-start justify-between text-center sm:text-left sm:px-10">
           <div className="sm:w-2/3 mb-8 sm:mb-0">
             <h1 className="text-cream text-stroke text-stroke-choco text-shadow-choco text-7xl font-bold mb-4">
-              Hi! This is Moe!
+              Hello, my friends!
+              <br />This is Theo & Moe!
             </h1>
             <p className="text-cream text-lg mb-8">
               Discover my work and skills in design, web development, and more.
@@ -24,7 +25,7 @@ const Hero = () => {
             </div>
           </div>
           <div className="sm:w-1/3">
-            <img src={CatImage} alt="Cat" className="w-3/5 sm:w-full h-auto mx-auto" />
+            <img src={CatImage} alt="Cat" className="w-3/5 sm:w-full h-auto mx-auto rotate-3" />
           </div>
         </div>
       </section>
