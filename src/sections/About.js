@@ -22,7 +22,7 @@ const About = () => {
             {/* About Me Text */}
             <div className="md:w-2/3 md:pl-8">
               <h2 className="text-3xl font-bold text-mint mb-4">
-                About Me
+                About Us
               </h2>
               <p className="text-lg text-choco mb-4">
                 Hello! I’m [Your Name], a passionate [Your Profession] based in
