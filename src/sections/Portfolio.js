@@ -1,23 +1,31 @@
 import React from 'react';
 import WavyMirroredDivider from '../assets/something/wavy-steps-mirrored.svg'
-
+import Dashboard from '../assets/images/monthlyRep.png'
+import Onsite from '../assets/images/onsite.png'
+import Website from '../assets/images/website.png'
+import HisRep from '../assets/images/hisRep.png'
 // Sample portfolio items
 const portfolioItems = [
   {
-    title: 'Project One',
+    title: 'Automated Dashboard',
     description: 'A creative and innovative design for a modern application.',
-    image: 'https://via.placeholder.com/600x400',
+    image: Dashboard,
   },
   {
-    title: 'Project Two',
+    title: 'On-site Consultancy',
     description: 'A visually appealing website with a focus on user experience.',
-    image: 'https://via.placeholder.com/600x400',
+    image: Onsite,
   },
   {
-    title: 'Project Three',
+    title: 'Website',
     description: 'An elegant and functional e-commerce platform.',
-    image: 'https://via.placeholder.com/600x400',
+    image: Website,
   },
+  {
+    title: 'Historical Analysis',
+    description: 'An elegant and functional e-commerce platform.',
+    image: HisRep,
+  }
   // Add more projects as needed
 ];
 
@@ -27,7 +35,7 @@ const Portfolio = () => {
     
     <section id="portfolio" className="py-40 bg-vitamin relative z-[-105] mt-[-145px]">
       <div className="container-max-w-5xl">
-        <h2 className="text-4xl font-bold text-center mb-12 text-choco">Portfolio</h2>
+        <h2 className="text-4xl font-bold text-center mb-12 text-choco">Services</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {portfolioItems.map((item, index) => (
             <div
