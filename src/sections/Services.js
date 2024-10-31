@@ -4,11 +4,14 @@ import Dashboard from "../assets/images/monthlyRep.png";
 import Onsite from "../assets/images/onsite.png";
 import Website from "../assets/images/website.png";
 import HisRep from "../assets/images/hisRep.png";
+import FadeIn from "../components/FadeIn";
+
 // Sample portfolio items
 const servicesItems = [
   {
     title: "Automated Dashboard",
-    description: "Transform booking data into insightful, user-friendly dashboards with ease.",
+    description:
+      "Transform booking data into insightful, user-friendly dashboards with ease.",
     image: Dashboard,
   },
   {
@@ -19,7 +22,8 @@ const servicesItems = [
   },
   {
     title: "Website",
-    description: "Smart websites with FAQs and QR codes to reduce guest inquiries.",
+    description:
+      "Smart websites with FAQs and QR codes to reduce guest inquiries.",
     image: Website,
   },
   {
@@ -38,35 +42,36 @@ const Services = () => {
         className="py-40 bg-vitamin relative z-[-105] mt-[-145px]"
       >
         <div className="container-max-w-5xl">
-          <h2 className="text-4xl font-bold text-center my-12">
-            Services
-          </h2>
+          <FadeIn>
+            <h2 className="text-4xl font-bold text-center my-12">Services</h2>
+          </FadeIn>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {servicesItems.map((item, index) => (
-              <div
-                key={index}
-                className="bg-cream shadow-solid border border-choco rounded-2xl overflow-hidden transform transition-transform duration-300 hover:scale-105"
-              >
-                {/* Image Section */}
-                <div className="p-4">
-                  <img
-                    src={item.image}
-                    alt={item.title}
-                    className="w-full h-64 rounded-xl border border-choco object-cover"
-                  />
+          <FadeIn>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {servicesItems.map((item, index) => (
+                <div
+                  key={index}
+                  className="bg-cream shadow-solid border border-choco rounded-2xl overflow-hidden transform transition-transform duration-300 hover:scale-105"
+                >
+                  {/* Image Section */}
+                  <div className="p-4">
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      className="w-full h-64 rounded-xl border border-choco object-cover"
+                    />
+                  </div>
+                  {/* Content Section */}
+                  <div className="px-7 py-4 text-left">
+                    <h3 className="text-2xl font-semibold mb-2o">
+                      {item.title}
+                    </h3>
+                    <p className="mb-4 text-lg">{item.description}</p>
+                  </div>
                 </div>
-
-                {/* Content Section */}
-                <div className="px-7 py-4 text-left">
-                  <h3 className="text-2xl font-semibold mb-2o">
-                    {item.title}
-                  </h3>
-                  <p className="mb-4 text-lg">{item.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
+          </FadeIn>
 
           {/* <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
           {servicesItems.map((item, index) => (
