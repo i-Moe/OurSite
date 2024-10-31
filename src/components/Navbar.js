@@ -35,7 +35,7 @@ const Navbar = () => {
         <header className="bg-cream text-choco border-b border-choco sticky top-0 z-50">
             <div className="container-max-w-5xl bg-cream flex justify-between items-center h-16 relative">
                 {/* Logo */}
-                <div className="text-2xl font-bold">Lazy Cat</div>
+                <div className="text-2xl font-bold">The Lazy Cat</div>
 
                 {/* Hamburger Menu (Mobile) */}
                 <div className="sm:hidden">

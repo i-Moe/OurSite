@@ -11,7 +11,7 @@ const Hero = () => {
             <h1 className="text-cream text-stroke text-stroke-choco text-shadow-choco text-8xl lg:text-9xl font-bold mb-4" style={{ lineHeight: '0.1' }}>
               Hello, 
               <span className="text-4xl lg:text-5xl"><br />my friends! We are</span> 
-              <br /><span className="text-7xl lg:text-8xl">Lazy Cat!</span>
+              <br /><span className="text-5xl lg:text-7xl">The Lazy Cat!</span>
             </h1>
             <p className="text-cream text-xl sm:pl-5">
               Discover who we are,

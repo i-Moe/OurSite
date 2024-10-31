@@ -21,7 +21,7 @@ const Footer = () => {
                     <a href="#clients" className="text-cream hover:text-vitamin mx-2">Clients</a>
                     <a href="#contact" className="text-cream hover:text-vitamin mx-2">Contact</a>
                 </div>
-                <p className="text-sm my-2">&copy; {new Date().getFullYear()} Lazy Cat. All rights reserved.</p>
+                <p className="text-sm my-2">&copy; {new Date().getFullYear()} The Lazy Cat. All rights reserved.</p>
             </div>
         </footer>
 
