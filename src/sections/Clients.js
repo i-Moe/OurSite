@@ -23,7 +23,7 @@ const Clients = () => {
       >
         <div className="container-max-w-5xl">
           <h2 className="text-3xl font-bold text-center my-14">Our Clients</h2>
-          <img src={WorldMap} alt="WorldMap" className="absolute top-[150px] z-[-10] w-11/12 h-auto" />
+          <img src={WorldMap} alt="WorldMap" className="absolute top-[150px] z-[-10] w-11/12 h-auto left-1/2 transform -translate-x-1/2" />
           <div className="flex flex-wrap justify-center px-2 sm:px-4 md:px-6 lg:px-0">
             {hostels.map((hostel, index) => (
               <div
@@ -33,7 +33,7 @@ const Clients = () => {
                 <div className="bg-cream p-5 rounded-xl shadow-solid border border-choco text-center md:min-h-[140px] flex flex-col justify-between">
                   {/* This div flex container centers the hostel name */}
                   <div className="flex flex-col flex-grow justify-center">
-                    <h3 className="text-xl font-semibold text-gray-800 flex items-center justify-center">
+                    <h3 className="text-xl font-semibold flex items-center justify-center">
                       <span
                         className={`fi fi-${hostel.countryCode.toLowerCase()} mr-2 text-lg`}
                       />
@@ -44,7 +44,7 @@ const Clients = () => {
                     </h3>
                   </div>
                   {/* Country name anchored at the bottom */}
-                  <p className="text-gray-600 mt-2">{hostel.country}</p>
+                  <p className="mt-2">{hostel.country}</p>
                 </div>
               </div>
             ))}

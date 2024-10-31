@@ -7,19 +7,20 @@ const Hero = () => {
     <>
       <section className="bg-mint min-h-[90vh] flex items-center justify-center">
         <div className="container-max-w-5xl flex flex-col sm:flex-row items-center sm:items-start justify-between text-center sm:text-left sm:px-10">
-          <div className="sm:w-3/5 mb-0 sm:mb-8">
-            <h1 className="text-cream text-stroke text-stroke-choco text-shadow-choco text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
-              Hello, my friends!
-              <br />We are Theo & Moe!
+          <div className="pt-16 md:pl-16 sm:w-3/5 mb-0 sm:mb-8">
+            <h1 className="text-cream text-stroke text-stroke-choco text-shadow-choco text-8xl lg:text-9xl font-bold mb-4" style={{ lineHeight: '0.1' }}>
+              Hello, 
+              <span className="text-4xl lg:text-5xl"><br />my friends! We are</span> 
+              <br /><span className="text-7xl lg:text-8xl">Lazy Cat!</span>
             </h1>
-            <p className="text-cream text-lg sm:pl-2">
-              Discover my work and skills in design,
-              <br />web development, and more.
+            <p className="text-cream text-xl sm:pl-5">
+              Discover who we are,
+              <br />our services, and more.
             </p>
-            <div className="flex justify-center mt-7 mb-5">
+            <div className="flex justify-center sm:justify-end sm:mr-8 mt-7 mb-5">
               <a
                 href="#contact"
-                className="bg-vitamin text-cream border border-vitamin px-6 py-3 rounded-full font-semibold hover:bg-cream hover:text-vitamin transition duration-300"
+                className="bg-vitamin text-cream text-lg border border-vitamin px-6 py-3 rounded-full font-semibold hover:bg-cream hover:text-vitamin transition duration-300"
               >
                 LET'S TALK!
               </a>
