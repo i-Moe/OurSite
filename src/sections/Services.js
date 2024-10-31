@@ -1,17 +1,33 @@
 import React from "react";
-import { FaPaintBrush, FaCode, FaLanguage } from "react-icons/fa";
-import HalfMoonDivider2 from "../assets/something/half-moon2.svg"; // Example icons from react-icons
-import WorldMap from "../assets/images/map.svg";
-import "flag-icons/css/flag-icons.min.css";
-import { GiMayanPyramid } from "react-icons/gi";
-
-const hostels = [
-  { name: "Blue Orange Hostel", country: "Macedonia", countryCode: "mk" },
-  { name: "Jungle Jaffa Hostel", country: "Israel", countryCode: "il" },
-  { name: "The Holy Rock Hostel", country: "Greece", countryCode: "gr" },
-  { name: "Pangar Barsay", country: "Thailand", countryCode: "th" },
-  { name: "Hostel Hasta la Vista", country: "Albania", countryCode: "al" },
-  // Add more hostels here if needed
+import WavyMirroredDivider from "../assets/something/wavy-steps-mirrored.svg";
+import Dashboard from "../assets/images/monthlyRep.png";
+import Onsite from "../assets/images/onsite.png";
+import Website from "../assets/images/website.png";
+import HisRep from "../assets/images/hisRep.png";
+// Sample portfolio items
+const servicesItems = [
+  {
+    title: "Automated Dashboard",
+    description: "Transform booking data into insightful, user-friendly dashboards with ease.",
+    image: Dashboard,
+  },
+  {
+    title: "On-site Consultancy",
+    description:
+      "Boost your space’s appeal from decor to promotions and online presence.",
+    image: Onsite,
+  },
+  {
+    title: "Website",
+    description: "Smart websites with FAQs and QR codes to reduce guest inquiries.",
+    image: Website,
+  },
+  {
+    title: "Historical Analysis",
+    description: "Turn past data into future profits with actionable insights.",
+    image: HisRep,
+  },
+  // Add more projects as needed
 ];
 
 const Services = () => {
@@ -19,155 +35,68 @@ const Services = () => {
     <>
       <section
         id="services"
-        className="pt-40 pb-16 bg-lemon relative z-[-110] mt-[-150px]"
+        className="py-40 bg-vitamin relative z-[-105] mt-[-145px]"
       >
         <div className="container-max-w-5xl">
-          <h2 className="text-3xl font-bold text-center mb-2">Our Clients</h2>
-          <img src={WorldMap} alt="Profile" className="w-full h-auto" />
-          <div className="flex flex-wrap justify-center px-2 sm:px-4 md:px-6 lg:px-0">
-            {hostels.map((hostel, index) => (
+          <h2 className="text-4xl font-bold text-center my-12">
+            Services
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {servicesItems.map((item, index) => (
               <div
                 key={index}
-                className="w-full sm:w-5/6 md:w-1/2 lg:w-1/3 p-3"
+                className="bg-cream shadow-solid border border-choco rounded-2xl overflow-hidden transform transition-transform duration-300 hover:scale-105"
               >
-                <div className="bg-cream p-6 rounded-xl shadow-solid border border-choco text-center min-h-[140px] flex flex-col justify-between">
-                  {/* This div flex container centers the hostel name */}
-                  <div className="flex flex-col flex-grow justify-center">
-                    <h3 className="text-xl font-semibold text-gray-800 flex items-center justify-center">
-                      <span
-                        className={`fi fi-${hostel.countryCode.toLowerCase()} mr-2 text-lg`}
-                      />
-                      {hostel.name}
-                      <span
-                        className={`fi fi-${hostel.countryCode.toLowerCase()} ml-2 text-lg`}
-                      />
-                    </h3>
-                  </div>
-                  {/* Country name anchored at the bottom */}
-                  <p className="text-gray-600 mt-2">{hostel.country}</p>
+                {/* Image Section */}
+                <div className="p-4">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="w-full h-64 rounded-xl border border-choco object-cover"
+                  />
+                </div>
+
+                {/* Content Section */}
+                <div className="px-7 py-4 text-left">
+                  <h3 className="text-2xl font-semibold mb-2o">
+                    {item.title}
+                  </h3>
+                  <p className="mb-4 text-lg">{item.description}</p>
                 </div>
               </div>
             ))}
           </div>
 
-          {/* <div className="flex flex-wrap -mx-4"> */}
-          {/* Graphic Design Card */}
-          {/* <div className="w-full md:w-1/3 px-4 mb-8">
-              <div className="bg-cream p-6 rounded-xl shadow-solid border border-choco text-center">
-                <FaPaintBrush className="text-4xl text-mint mb-4 mx-auto" />
-                <h3 className="text-xl font-semibold mb-2">Graphic Design</h3>
-                <p className="text-gray-600">
-                  Creating visually stunning graphics to represent your brand
-                  and ideas effectively.
-                </p>
+          {/* <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+          {servicesItems.map((item, index) => (
+            <div
+              key={index}
+              className="relative bg-cream shadow-solid border border-choco rounded-2xl overflow-hidden transform transition-transform duration-300 hover:scale-105"
+            >
+              <img
+                src={item.image}
+                alt={item.title}
+                className="w-full h-64 object-cover transition-transform duration-300 hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60"></div>
+              <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white p-6">
+                <h3 className="text-2xl font-semibold mb-2">{item.title}</h3>
+                <p className="text-lg">{item.description}</p>
               </div>
             </div>
-          
-          </div> */}
+          ))}
+        </div> */}
         </div>
       </section>
 
       <img
-        src={HalfMoonDivider2}
-        alt="Half Moon divider"
-        className="block w-full 
-        
-        
-        relative mt-[-3px]
-          h-[40px] sm:h-[60px] lg:h-[100px]"
+        src={WavyMirroredDivider}
+        alt="Wavy Mirrored divider"
+        className="block w-full mt-[-3px]"
       />
     </>
   );
 };
 
 export default Services;
-
-// Jan
-// 7
-// 10
-// 10
-// 10
-
-// Feb
-// 10
-// 10
-// 10
-// 10
-// 10
-
-// March
-// 10
-// 10
-// 10
-// 10
-// 10
-
-// AudioProcessingEvent
-// 10
-// 10
-// 10
-// 10
-
-// GiMayanPyramid
-// 8
-// 9
-// 10
-// 10
-// 10
-// 10
-// 10
-// 10
-
-// June
-// 9
-// 10
-// 5
-// 7
-// 6
-// 9
-// 10
-// 9
-
-// July
-// 10
-// 10
-// 10
-// 8
-// 10
-// 9
-// 7
-// 9
-// 10
-// 10
-// 9
-// 8
-// 10
-// 10
-// 3
-// 10
-
-// Aug
-// 10
-// 9
-// 10
-// 8
-// 8
-// 9
-// 10
-// 8
-// 3
-
-// SecurityPolicyViolationEvent
-// 5
-// 5
-// 10
-// 10
-// 9
-// 10
-// 8
-// 10
-// 10
-// 2
-// 2
-// 10
-// 7

@@ -35,7 +35,7 @@ const Navbar = () => {
         <header className="bg-cream text-choco border-b border-choco sticky top-0 z-50">
             <div className="container-max-w-5xl bg-cream flex justify-between items-center h-16 relative">
                 {/* Logo */}
-                <div className="text-2xl font-bold">Theo & Moe</div>
+                <div className="text-2xl font-bold">Lazy Cat</div>
 
                 {/* Hamburger Menu (Mobile) */}
                 <div className="sm:hidden">
@@ -47,8 +47,8 @@ const Navbar = () => {
                 {/* Menu (Desktop) */}
                 <nav className="hidden sm:flex space-x-6">
                     <a href="#about" className="hover:text-mint">About</a>
-                    <a href="#portfolio" className="hover:text-vitamin">Portfolio</a>
                     <a href="#services" className="hover:text-mint">Services</a>
+                    <a href="#clients" className="hover:text-vitamin">Clients</a>
                     <a href="#contact" className="hover:text-vitamin">Contact</a>
                 </nav>
             </div>
@@ -67,16 +67,16 @@ const Navbar = () => {
             About
         </a>
         <a
-            href="#portfolio"
-            className={`block px-4 py-2 hover:bg-vitamin w-full text-center transform transition duration-300 hover:text-cream ${isOpen ? 'animate-scale-up-and-shake' : ''}`}
-        >
-            Portfolio
-        </a>
-        <a
             href="#services"
             className={`block px-4 py-2 hover:bg-mint w-full text-center transform transition duration-300 hover:text-cream ${isOpen ? 'animate-scale-up-and-shake' : ''}`}
         >
             Services
+        </a>
+        <a
+            href="#clients"
+            className={`block px-4 py-2 hover:bg-vitamin w-full text-center transform transition duration-300 hover:text-cream ${isOpen ? 'animate-scale-up-and-shake' : ''}`}
+        >
+            Clients
         </a>
         <a
             href="#contact"
