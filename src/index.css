@@ -15,6 +15,11 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  cursor: url("./assets/images/paw.png"), auto;
+}
+
+a{
+  cursor: url("./assets/images/cat.png"), auto;
 }
 
 code {
